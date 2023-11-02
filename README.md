@@ -1,5 +1,5 @@
 # Shebang-add
-a Python script to add a Shebang to an existing script.
+A Python script to add a Shebang to an existing script.
 
 # Usage:
 Run:
@@ -15,3 +15,5 @@ If you want to mark the file as executable, you can add the option "-e" or run t
 ```Shell
 ./Shebang_add.py test.py Python -e
 ```
+
+# Modifying:

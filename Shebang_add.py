@@ -17,15 +17,11 @@ Interpreters = {
     }
     
 Ip = args.interpreter
-print(args.file)
 if Ip in Interpreters:
     try:
         with open(args.file, "r+") as script:
-            script.seek(0)
-            firstLine = script.readline()
-            firstLine = list(firstLine)
-            if firstLine[0] == "#":
-                pass
-            script.write(Interpreters[Ip])
+            content = script.read()
+            script.seek(0,0)
+            script.write(Interpreters[Ip]+ "\n"+ content)
     except FileNotFoundError:
         print("Die angegebene Datei existiert nicht.")
