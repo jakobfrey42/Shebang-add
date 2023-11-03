@@ -21,8 +21,11 @@ Shebang = Interpreters[Ip]
 if Ip in Interpreters:
     try:
         with open(args.file, "r+") as script:
-            content = script.read()
+            content = script.readlines()
             script.seek(0,0)
-            script.write(Shebang+ "\n"+ content)
+            firstLineLst = list(content[0])
+            if firstLineLst[0] == "#" and firstLineLst[1] == "!":
+                del(content[0])
+            script.write(Shebang+ "\n"+ "".join(content))
     except FileNotFoundError:
         print("Die angegebene Datei existiert nicht.")
