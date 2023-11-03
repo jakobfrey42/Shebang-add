@@ -17,11 +17,12 @@ Interpreters = {
     }
     
 Ip = args.interpreter
+Shebang = Interpreters[Ip]
 if Ip in Interpreters:
     try:
         with open(args.file, "r+") as script:
             content = script.read()
             script.seek(0,0)
-            script.write(Interpreters[Ip]+ "\n"+ content)
+            script.write(Shebang+ "\n"+ content)
     except FileNotFoundError:
         print("Die angegebene Datei existiert nicht.")
