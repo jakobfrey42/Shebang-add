@@ -12,6 +12,7 @@
         "Filename of the script",
         "Name of the interpreter",
         "Option to mark the file as executable",
+        "Display the current version",
         "This file does not exist."
       ],
       "German": [
@@ -20,6 +21,7 @@
         "Dateiname des Skripts",
         "Name des Interpreters",
         "Option zum Markieren als ausfuehrbare Datei",
+        "Zeigt die derzeitige Version an",
         "Die angegebene Datei existiert nicht."
       ]
     },
