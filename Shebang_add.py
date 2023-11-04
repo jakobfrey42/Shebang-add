@@ -6,7 +6,7 @@ from argparse import ArgumentParser
 parser = ArgumentParser(description = "Ein Programm um schnell und einafch Shebangs in Skripten zu ergaenzen")
 parser.add_argument("file", metavar="Datei", type=str, help="Dateiname des Skripts")
 parser.add_argument("interpreter", metavar="Interpreter", type=str, help="Name des Interpreters")
-parser.add_argument("-e", "--executable", default = False, help="Option zum direkten Markieren als ausfuehrbare Datei Default: False")
+parser.add_argument("-e", "--executable", default = False, help="Option zum direkten Markieren als ausfuehrbare Datei")
 args = parser.parse_args()
 print(args.executable)
 

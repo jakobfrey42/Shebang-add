@@ -6,21 +6,25 @@
       "Shell": "#!/usr/bin/sh"
     },
     {
-      "defaulLanguage": "English",
       "English": [
-        "abc",
-        "abc",
-        "abc",
-        "abc"
+        "A program to add shebangs in scripts quickly and easily",
+        "File",
+        "Filename of the script",
+        "Name of the interpreter",
+        "Option to mark the file as executable",
+        "This file does not exist."
       ],
       "German": [
-        "abc",
-        "abc",
-        "abc",
-        "abc"
+        "Ein Programm um schnell und einafch Shebangs in Skripten zu ergaenzen",
+        "Datei",
+        "Dateiname des Skripts",
+        "Name des Interpreters",
+        "Option zum Markieren als ausfuehrbare Datei",
+        "Die angegebene Datei existiert nicht."
       ]
     },
     {
+      "defaulLanguage": "English",
       "Executable": false
     }
   ]
