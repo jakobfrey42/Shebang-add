@@ -8,6 +8,7 @@ parser.add_argument("file", metavar="Datei", type=str, help="Dateiname des Skrip
 parser.add_argument("interpreter", metavar="Interpreter", type=str, help="Name des Interpreters")
 parser.add_argument("-e", "--executable", default = False, help="Option zum direkten Markieren als ausfuehrbare Datei Default: False")
 args = parser.parse_args()
+print(args.executable)
 
 Interpreters = {
     "Python": "#!/usr/bin/env python3",

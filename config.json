@@ -1,0 +1,26 @@
+[
+    {
+      "Python": "#!/usr/bin/env python3",
+      "Bash": "#!/usr/bin/bash",
+      "Zsh": "#!/usr/bin/zsh",
+      "Shell": "#!/usr/bin/sh"
+    },
+    {
+      "defaulLanguage": "English",
+      "English": [
+        "abc",
+        "abc",
+        "abc",
+        "abc"
+      ],
+      "German": [
+        "abc",
+        "abc",
+        "abc",
+        "abc"
+      ]
+    },
+    {
+      "Executable": false
+    }
+  ]
