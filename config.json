@@ -1,4 +1,9 @@
 [
+  {
+    "defaultLanguage": "English",
+    "executable": false,
+    "notifications": true
+  },
     {
       "Python": "#!/usr/bin/env python3",
       "Bash": "#!/usr/bin/bash",
@@ -24,9 +29,5 @@
         "Zeigt die derzeitige Version an",
         "Die angegebene Datei existiert nicht."
       ]
-    },
-    {
-      "defaulLanguage": "English",
-      "Executable": false
     }
   ]
