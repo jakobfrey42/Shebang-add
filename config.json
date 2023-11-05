@@ -5,10 +5,17 @@
     "notifications": true
   },
     {
-      "Python": "#!/usr/bin/env python3",
       "Bash": "#!/usr/bin/bash",
+      "Python": "#!/usr/bin/env python3",
+      "Python2": "#!/usr/bin/python",
+      "Perl": " #!/usr/bin/perl",
+      "Java": "#!/usr/bin/java",
+      "Node.js": "#!/usr/bin/node",
+      "PHP": "#!/usr/bin/php",
+      "Ruby": "#!/usr/bin/ruby",
       "Zsh": "#!/usr/bin/zsh",
-      "Shell": "#!/usr/bin/sh"
+      "Shell": "#!/usr/bin/sh",
+      "Awk": "#!/usr/bin/env awk"
     },
     {
       "English": [
