@@ -18,8 +18,8 @@ print(sentences)
 parser = ArgumentParser(description = sentences[0])
 parser.add_argument("file", metavar=sentences[1], type=str, help=sentences[2])
 parser.add_argument("interpreter", metavar="Interpreter", type=str, help=sentences[3])
-parser.add_argument("-e", "--executable", default = False, help=sentences[4])
-parser.add_argument("-v", "--version", action="version", version="0.90", help=sentences[5])
+parser.add_argument("-e", "--executable", default = Config["executable"], help=sentences[4])
+parser.add_argument("-v", "--version", action="version", version="0.91", help=sentences[5])
 args = parser.parse_args()
     
 Ip = args.interpreter

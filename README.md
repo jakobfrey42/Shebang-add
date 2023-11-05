@@ -17,3 +17,16 @@ If you want to mark the file as executable, you can add the option "-e" or run t
 ```
 
 # Modifying:
+You can modify many things by adding the config-file it's called "config.json"
+## Language:
+To change the language, edit the config file and change **"defaultLanguage"**
+```json
+    "defaultLanguage": "English",
+```
+from **"English"** to **"German"**. Currently only English and German are available.
+## Executable:
+For changing the Default of the **"-e"** option you can change **"executable"** to **true**.
+```json
+    "executable": false,
+```
+Now you don't have to add **-e True**
