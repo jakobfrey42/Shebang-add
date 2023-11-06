@@ -13,20 +13,25 @@ Languages = data[2]
 
 outputLanguage = Config["defaultLanguage"]
 sentences = Languages[outputLanguage]
-print(sentences)
 
-parser = ArgumentParser(description = sentences[0])
-parser.add_argument("file", metavar=sentences[1], type=str, help=sentences[2])
-parser.add_argument("interpreter", metavar="Interpreter", type=str, help=sentences[3])
-parser.add_argument("-e", "--executable", default = Config["executable"], help=sentences[4])
-parser.add_argument("-v", "--version", action="version", version="0.91", help=sentences[5])
+parser = ArgumentParser(description = sentences["description"])
+parser.add_argument("file", metavar=sentences["file"], type=str, help=sentences["scriptname"])
+parser.add_argument("interpreter", metavar="Interpreter", type=str, help=sentences["interpreter"])
+parser.add_argument("-e", "--executable", default = Config["executable"], help=sentences["executable"])
+parser.add_argument("-v", "--version", action="version", version="0.91", help=sentences["version"])
 args = parser.parse_args()
     
 Ip = args.interpreter
 if Ip in Interpreters:
     Shebang = Interpreters[Ip]
 else:
-    Shebang = ''.join(["#!", Ip])
+    if Config["notifications"]:        
+        permission = input(sentences["unknownInterpreter"]+ "[y/n]")
+        if permission == "y":
+            Shebang = ''.join(["#!", Ip])
+        else:
+            print(sentences["abort"])
+            quit()
 
 try:
     with open(args.file, "r+") as script:
@@ -37,7 +42,7 @@ try:
             del(content[0])
         script.write(Shebang+ "\n"+ "".join(content))
 except FileNotFoundError:
-    print(sentences[6])
+    print(sentences["fileError"])
 
 if args.executable == "True":
     from os import system

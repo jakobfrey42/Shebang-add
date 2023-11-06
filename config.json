@@ -1,8 +1,9 @@
 [
   {
-    "defaultLanguage": "English",
+    "defaultLanguage": "German",
     "executable": false,
-    "notifications": true
+    "notifications": true,
+    "defaultInput": "y"
   },
     {
       "Bash": "#!/usr/bin/bash",
@@ -15,26 +16,31 @@
       "Ruby": "#!/usr/bin/ruby",
       "Zsh": "#!/usr/bin/zsh",
       "Shell": "#!/usr/bin/sh",
+      "Tcl": "#!/usr/bin/env tclsh",
       "Awk": "#!/usr/bin/env awk"
     },
     {
-      "English": [
-        "A program to add shebangs in scripts quickly and easily",
-        "File",
-        "Filename of the script",
-        "Name of the interpreter",
-        "Option to mark the file as executable",
-        "Display the current version",
-        "This file does not exist."
-      ],
-      "German": [
-        "Ein Programm um schnell und einafch Shebangs in Skripten zu ergaenzen",
-        "Datei",
-        "Dateiname des Skripts",
-        "Name des Interpreters",
-        "Option zum Markieren als ausfuehrbare Datei",
-        "Zeigt die derzeitige Version an",
-        "Die angegebene Datei existiert nicht."
-      ]
+      "English": {
+        "description": "A program to add shebangs in scripts quickly and easily",
+        "file":"File",
+        "scriptname": "Filename of the script",
+        "interpreter": "Name of the interpreter",
+        "executable": "Option to mark the file as executable",
+        "version": "Display the current version",
+        "unknownInterpreter": "The entered interpreter is not a standard interpreter, do you still want to continue?  ",
+        "abort": "abort",
+        "fileError": "This file does not exist."
+      },
+      "German": {
+        "description": "Ein Programm um schnell und einafch Shebangs in Skripten zu ergaenzen",
+        "file": "Datei",
+        "scriptname": "Dateiname des Skripts",
+        "interpreter": "Name des Interpreters",
+        "executable": "Option zum Markieren als ausfuehrbare Datei",
+        "version": "Zeigt die derzeitige Version an",
+        "unknownInterpreter": "Der eingegebene interpreter ist kein Standardinterpreter, wollen Sie trotzdem fortfahren?  ",
+        "abort": "Abbruch",
+        "fileError": "Die angegebene Datei existiert nicht."
+      }
     }
   ]
