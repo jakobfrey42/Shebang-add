@@ -2,7 +2,7 @@
   {
     "defaultLanguage": "German",
     "executable": false,
-    "notifications": true,
+    "notifications": false,
     "defaultInput": "y"
   },
     {
