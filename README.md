@@ -1,6 +1,8 @@
 # Shebang-add
 A Python script to add a Shebang to an existing script.
 
+This is my first public repository and not all features are fully implemented yet. If there are any bugs, please let me know, e.g. via the Issues tab on GitHub.
+
 # Usage:
 Run:
 ```Shell
@@ -18,12 +20,14 @@ If you want to mark the file as executable, you can add the option "-e" or run t
 
 # Modifying:
 You can modify many things by adding the config-file it's called "config.json"
+
 ## Language:
 To change the language, edit the config file and change **"defaultLanguage"**
 ```json
     "defaultLanguage": "German",
 ```
 from **"English"** to **"German"**. Currently only English and German are available.
+
 ## Executable:
 For changing the default of the **"-e"** option you can change **"executable"** to **true**.
 ```json
@@ -37,5 +41,6 @@ the **"notifications"**-key controls whether the program asks you if you want to
 ```
 he will ask you if you really want to add the interpreter.
 If it is set to **false** he will never ask you again.
+
 ## DefaultInput:
 This Option isn't implemented yet. It will control the default input if **"notifications"** is set to **true**.
