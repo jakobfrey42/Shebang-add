@@ -18,6 +18,17 @@ If you want to mark the file as executable, you can add the option "-e" or run t
 ./Shebang_add.py test.py Python -e True
 ```
 
+# Installation:
+If you want to run my script from any directory in the terminal, there are two ways to install it.
+## 1. The Package Manager (Linux)
+If you are on Debian-based Distributions you can download the .deb-file in the GitHub-releases. Then just run:
+```bash
+sudo apt install <filename>
+```
+Unfortunately there is no rpm-file yet. But in the future I will create and upload it. That's the easiest way to install it, but I might forget to update the package after changing something. Then please contact me.
+
+## 2. Manually Installation:
+you can also do it Manually just copy the file **"shebang-add"** to **"/usr/bin/"**. Then you have to create the directory **"shebang-add"** in **"/etc/"** and copy **"config.json"** to **"/etc/shebang-add/"**. The last thing you have to do is to edit the path of the config-file in **"shebang-add"** 
 # Modifying:
 You can modify many things by adding the config-file it's called "config.json"
 

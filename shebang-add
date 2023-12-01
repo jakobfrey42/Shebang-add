@@ -18,7 +18,7 @@ parser = ArgumentParser(description = sentences["description"])
 parser.add_argument("file", metavar=sentences["file"], type=str, help=sentences["scriptname"])
 parser.add_argument("interpreter", metavar="Interpreter", type=str, help=sentences["interpreter"])
 parser.add_argument("-e", "--executable", default = Config["executable"], help=sentences["executable"])
-parser.add_argument("-v", "--version", action="version", version="0.93", help=sentences["version"])
+parser.add_argument("-v", "--version", action="version", version="0.94", help=sentences["version"])
 args = parser.parse_args()
     
 Ip = args.interpreter
